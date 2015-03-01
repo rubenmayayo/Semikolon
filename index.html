@@ -1,95 +1,109 @@
-<!doctype html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/semikolon.min.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
 
-  <title>Semikolon</title>
-  <meta name="description" content="Semikolon Simple Fixed Grid System">
-  <meta name="author" content="@rmayayo">
+    <title>Semikolon by rubenmayayo</title>
+  </head>
 
-  <link rel="stylesheet" href="css/semikolon.css">
-  <link rel="stylesheet" href="site.theme.css">
+  <body>
 
-  <!--[if lt IE 9]>
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
-</head>
+    <header>
+      <div class="container">
+        <h1>Semikolon</h1>
+        <h2>Responsive fixed grid CSS built with Sass</h2>
 
-<body>
+        <section id="downloads">
+          <a href="https://github.com/rubenmayayo/Semikolon/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/rubenmayayo/Semikolon/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/rubenmayayo/Semikolon" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
 
-<div class="light centered">
+    <div class="row">
+      <section id="main_content">
+        <h3>What is Semikolon?</h3>
 
-	<h1>Semikolon</h1>
-	<h3>Responsive Fixed Grid made simple</h3>
+<p>Semikolon is a responsive fixed grid system that allows to divide your layout in rows, and each row in up to 12 columns. Using the apropiate class, columns can be combined and shifted to create diferent containers.</p>
 
-</div>
+<div class="grid-example">
+  <div class="row">
+    <div class="col12">col12</div>
+  </div>
+  <div class="row">
+    <div class="col7">col7</div>
+    <div class="col5">col5</div>
+  </div>
+  <div class="row">
+    <div class="col6">col6</div>
+    <div class="col6">col6</div>
+  </div>
+  <div class="row">
+    <div class="col4">col4</div>
+    <div class="col4">col4</div>
+    <div class="col4">col4</div>
+  </div>
+  <div class="row">
+    <div class="col3">col3</div>
+    <div class="col3">col3</div>
+    <div class="col3">col3</div>
+    <div class="col3">col3</div>
+  </div>
+    <div class="row">
+    <div class="col2">col2</div>
+    <div class="col2">col2</div>
+    <div class="col2">col2</div>
+    <div class="col2">col2</div>
+    <div class="col2">col2</div>
+    <div class="col2">col2</div>
+  </div>
+    <div class="row">
+    <div class="col1">col1</div>
+    <div class="col1">col1</div>
+    <div class="col1">col1</div>
+    <div class="col1">col1</div>
+    <div class="col1">col1</div>
+    <div class="col1">col1</div>
+    <div class="col1">col1</div>
+    <div class="col1">col1</div>
+    <div class="col1">col1</div>
+    <div class="col1">col1</div>
+    <div class="col1">col1</div>
+    <div class="col1">col1</div>
+  </div>
+    <div class="row">
+    <div class="col4 offset1">col4 offset1</div>
+    <div class="col4 offset3">col4 offset3</div>
+  </div>
+  </div>
 
-<div class="dark">
+<h3>Usage</h3>
 
-<div class="row">
-<div class="col12">
-<p>Semikolon is a responsive fixed grid that allows to divide vertically in rows and horizontally in 12 equally sized columns. Using the apropiate class, columns can be combined and shifted to create diferent layouts.</p>
-</div>
-</div>
-<div class="grid-example centered">
-	<div class="row">
-		<div class="col12">col12</div>
-	</div>
-	<div class="row">
-		<div class="col7">col7</div>
-		<div class="col5">col5</div>
-	</div>
-	<div class="row">
-		<div class="col6">col6</div>
-		<div class="col6">col6</div>
-	</div>
-	<div class="row">
-		<div class="col4">col4</div>
-		<div class="col4">col4</div>
-		<div class="col4">col4</div>
-	</div>
-	<div class="row">
-		<div class="col3">col3</div>
-		<div class="col3">col3</div>
-		<div class="col3">col3</div>
-		<div class="col3">col3</div>
-	</div>
-		<div class="row">
-		<div class="col2">col2</div>
-		<div class="col2">col2</div>
-		<div class="col2">col2</div>
-		<div class="col2">col2</div>
-		<div class="col2">col2</div>
-		<div class="col2">col2</div>
-	</div>
-		<div class="row">
-		<div class="col1">col1</div>
-		<div class="col1">col1</div>
-		<div class="col1">col1</div>
-		<div class="col1">col1</div>
-		<div class="col1">col1</div>
-		<div class="col1">col1</div>
-		<div class="col1">col1</div>
-		<div class="col1">col1</div>
-		<div class="col1">col1</div>
-		<div class="col1">col1</div>
-		<div class="col1">col1</div>
-		<div class="col1">col1</div>
-	</div>
-		<div class="row">
-		<div class="col4 offset1">col4 offset1</div>
-		<div class="col4 offset3">col4 offset3</div>
-	</div>
-	</div>
+<p>Simply add semikolon.min.css to your page:</p>
 
-	<div class="row">
-		<div class="col4"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
-		<div class="col4"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
-		<div class="col4"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
-	</div>
-</div>
-</div>
-</body>
+<pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;css/semikolon.min.css&quot;&gt;
+</code></pre>
+
+<p>This is the code used to generate the previous columns and rows:</p>
+
+<pre><code>&lt;div class=&quot;row&quot;&gt;<br/>    &lt;div class=&quot;col12&quot;&gt;col12&lt;/div&gt;<br/>&lt;/div&gt;<br/>&lt;div class=&quot;row&quot;&gt;<br/>    &lt;div class=&quot;col7&quot;&gt;col7&lt;/div&gt;<br/>    &lt;div class=&quot;col5&quot;&gt;col5&lt;/div&gt;<br/>&lt;/div&gt;<br/>&lt;div class=&quot;row&quot;&gt;<br/>    &lt;div class=&quot;col6&quot;&gt;col6&lt;/div&gt;<br/>    &lt;div class=&quot;col6&quot;&gt;col6&lt;/div&gt;<br/>&lt;/div&gt;<br/>&lt;div class=&quot;row&quot;&gt;<br/>    &lt;div class=&quot;col4&quot;&gt;col4&lt;/div&gt;<br/>    &lt;div class=&quot;col4&quot;&gt;col4&lt;/div&gt;<br/>    &lt;div class=&quot;col4&quot;&gt;col4&lt;/div&gt;<br/>&lt;/div&gt;<br/>&lt;div class=&quot;row&quot;&gt;<br/>    &lt;div class=&quot;col3&quot;&gt;col3&lt;/div&gt;<br/>    &lt;div class=&quot;col3&quot;&gt;col3&lt;/div&gt;<br/>    &lt;div class=&quot;col3&quot;&gt;col3&lt;/div&gt;<br/>    &lt;div class=&quot;col3&quot;&gt;col3&lt;/div&gt;<br/>&lt;/div&gt;<br/>&lt;div class=&quot;row&quot;&gt;<br/>    &lt;div class=&quot;col2&quot;&gt;col2&lt;/div&gt;<br/>    &lt;div class=&quot;col2&quot;&gt;col2&lt;/div&gt;<br/>    &lt;div class=&quot;col2&quot;&gt;col2&lt;/div&gt;<br/>    &lt;div class=&quot;col2&quot;&gt;col2&lt;/div&gt;<br/>    &lt;div class=&quot;col2&quot;&gt;col2&lt;/div&gt;<br/>    &lt;div class=&quot;col2&quot;&gt;col2&lt;/div&gt;<br/>&lt;/div&gt;<br/>&lt;div class=&quot;row&quot;&gt;<br/>    &lt;div class=&quot;col1&quot;&gt;col1&lt;/div&gt;<br/>    &lt;div class=&quot;col1&quot;&gt;col1&lt;/div&gt;<br/>    &lt;div class=&quot;col1&quot;&gt;col1&lt;/div&gt;<br/>    &lt;div class=&quot;col1&quot;&gt;col1&lt;/div&gt;<br/>    &lt;div class=&quot;col1&quot;&gt;col1&lt;/div&gt;<br/>    &lt;div class=&quot;col1&quot;&gt;col1&lt;/div&gt;<br/>    &lt;div class=&quot;col1&quot;&gt;col1&lt;/div&gt;<br/>    &lt;div class=&quot;col1&quot;&gt;col1&lt;/div&gt;<br/>    &lt;div class=&quot;col1&quot;&gt;col1&lt;/div&gt;<br/>    &lt;div class=&quot;col1&quot;&gt;col1&lt;/div&gt;<br/>    &lt;div class=&quot;col1&quot;&gt;col1&lt;/div&gt;<br/>    &lt;div class=&quot;col1&quot;&gt;col1&lt;/div&gt;<br/>&lt;/div&gt;<br/>    &lt;div class=&quot;row&quot;&gt;<br/>    &lt;div class=&quot;col4 offset1&quot;&gt;col4 offset1&lt;/div&gt;<br/>    &lt;div class=&quot;col4 offset3&quot;&gt;col4 offset3&lt;/div&gt;<br/>&lt;/div&gt;</code></pre>
+
+<h3>Author</h3>
+
+<p>Created on a boring sunday by <a href="https://github.com/rubenmayayo" class="user-mention">@rubenmayayo</a></p>
+<p>Follow me on twitter <a href="https://twitter.com/rmayayo" class="user-mention">@rmayayo</a></p>
+
+      </section>
+    </div>
+
+    
+  </body>
 </html>
