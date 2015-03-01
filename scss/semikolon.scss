@@ -1,0 +1,63 @@
+@import 'normalize.css';
+
+$columns: 12;
+
+@mixin thismedia($total, $pad) {
+
+	.row {
+		width: $total;
+	}
+
+	[class^="col"] {
+		margin: 0 $pad 0 $pad;
+	}
+	
+	$unit: $total/$columns;
+
+	@for $i from 1 through $columns {
+
+		$size: $unit*$i - 2*$pad;
+
+		.col#{$i} {
+			width: $size;
+		}
+	}
+
+	@for $i from 1 to $columns {
+	  
+	 	.offset#{$i} {
+	 		margin-left: $total*$i/$columns + $pad ;
+	 	}
+	}
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	width: 300px;
+}
+
+[class^="col"],[class*=" col"] {
+	margin: 10px 0 0 0;
+	width: 300px;
+}
+
+@media screen and (min-width:480px) and (max-width:767px) {
+	.row {
+		width:400px;
+	}
+	[class^="col"],[class*=" col"]{
+		width:400px;
+	}
+}
+
+@media screen and (min-width:768px) and (max-width:959px) {
+	@include thismedia(768px, 14px);
+}
+@media screen and (min-width:960px) and (max-width: 1199px){
+	@include thismedia(960px, 16px);
+}
+@media screen and (min-width: 1200px) {
+	@include thismedia(1200px, 20px);
+}
