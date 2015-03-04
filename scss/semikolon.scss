@@ -1,32 +1,31 @@
+/* Semikolon v1.0 | MIT License | https://github.com/rubenmayayo/Semikolon */
 @import 'normalize.css';
 
 $columns: 12;
 
-@mixin thismedia($total, $pad) {
+@mixin layout($total_width, $separation) {
 
 	.row {
-		width: $total;
+		width: $total_width;
 	}
 
 	[class^="col"] {
-		margin: 0 $pad 0 $pad;
+		margin: 0 $separation 0 $separation;
 	}
 	
-	$unit: $total/$columns;
-
 	@for $i from 1 through $columns {
 
-		$size: $unit*$i - 2*$pad;
+		$column_size: $i*$total_width/$columns - 2*$separation;
 
 		.col#{$i} {
-			width: $size;
+			width: $column_size;
 		}
 	}
 
 	@for $i from 1 to $columns {
 	  
 	 	.offset#{$i} {
-	 		margin-left: $total*$i/$columns + $pad ;
+	 		margin-left: $i*$total_width/$columns + $separation ;
 	 	}
 	}
 }
@@ -53,11 +52,11 @@ $columns: 12;
 }
 
 @media screen and (min-width:768px) and (max-width:959px) {
-	@include thismedia(768px, 14px);
+	@include layout(768px, 14px);
 }
 @media screen and (min-width:960px) and (max-width: 1199px){
-	@include thismedia(960px, 16px);
+	@include layout(960px, 16px);
 }
 @media screen and (min-width: 1200px) {
-	@include thismedia(1200px, 20px);
+	@include layout(1200px, 20px);
 }
